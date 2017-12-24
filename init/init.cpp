@@ -334,7 +334,7 @@ static bool set_highest_available_option_value(std::string path, int min, int ma
     }
     return true;
 }
-
+#if 0
 #define MMAP_RND_PATH "/proc/sys/vm/mmap_rnd_bits"
 #define MMAP_RND_COMPAT_PATH "/proc/sys/vm/mmap_rnd_compat_bits"
 
@@ -402,7 +402,7 @@ static int set_mmap_rnd_bits_action(const std::vector<std::string>& args)
     }
     return ret;
 }
-
+#endif
 #define KPTR_RESTRICT_PATH "/proc/sys/kernel/kptr_restrict"
 #define KPTR_RESTRICT_MINVALUE 2
 #define KPTR_RESTRICT_MAXVALUE 4
